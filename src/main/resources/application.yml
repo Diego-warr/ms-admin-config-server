@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: ms-admin-config-server
+#Configuracion Local
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:///D:/proyectos_curso_microservicios/ms-admin-config-data
